@@ -46,6 +46,59 @@ nav #direita a:last-child{
     border-radius: 50px;
 }
 
+#intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 50px 0px;
+    align-items: center;
+    gap: 40px;
+}
+
+#intro .texto{
+    flex: 5;
+
+}
+
+#intro #foto{
+    flex: 2;
+    display: flex;
+    justify-content: right; 
+
+}
+#intro img{
+    border-radius: 50%;
+    width: 350px; 
+    height: 350px;
+
+}
+
+#intro h2{
+    font-size: 50px;
+}
+
+#intro .texto .links{
+    margin-top: 20px;
+    
+}
+
+#intro .texto .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(47, 47, 255);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+    transition: 0.1s;
+}
+
+#intro .texto .links a:hover{
+    color: black;
+    border-color: black;
+}
 @media (max-width: 570px){
     nav {
         padding: 0 20px;
@@ -56,9 +109,11 @@ nav #direita a:last-child{
     nav #direita a:last-child{
         color: black;
         background-color: #f5f5f5;
+        padding: 5px 
 
     }
     nav #direita a i{
        font-size: 30px;
     }
 }
+

@@ -163,12 +163,14 @@ nav #direita a:last-child{
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 #projetos .vitrine .projeto{
     height: 350px;
     width: 500px;
     border: 1.5px solid lightgray;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     
@@ -182,11 +184,25 @@ nav #direita a:last-child{
     align-items: center;
     justify-content: center;
     display: flex;
+
 }
 
 #projetos .vitrine .projeto .foto img{
     height: 200px;
     width: 400px;
+
+}
+
+@media (max-width:1110px){
+
+    #projetos .vitrine{
+        height: 100%;
+    }
+
+    #projetos .vitrine .projeto{
+        height: 525px;
+        width: 750px;
+    }
 }
 
 @media (max-width:850px){
@@ -233,10 +249,31 @@ nav #direita a:last-child{
         font-size: 30px;
     }
     #habilidades{
-        padding: 0 20px
+        padding: 0 20px;
     }
     #habilidades .celulas .celula span{
         font-size: 16px;
     }
+    #projetos{
+        padding: 0 20px;
+        
+    }
+    #projetos .vitrine .projeto{
+        width: 140%;
+    }
+    #projetos .vitrine .projeto .foto{
+    min-height: 40%;
+    max-width: 80%;
+    position: relative;
+
+    }
+    #projetos .vitrine .projeto .foto img{
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+    }
+
+
 }
 

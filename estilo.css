@@ -150,11 +150,43 @@ nav #direita a:last-child{
 
 #projetos{
     text-align: center;
-
+    margin-bottom: 100px;
 }
 
 #projetos h2{
     font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#projetos .vitrine{
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#projetos .vitrine .projeto{
+    height: 350px;
+    width: 500px;
+    border: 1.5px solid lightgray;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#projetos .vitrine .projeto .foto{
+    margin-top: 20px;
+    height: 202px;
+    width: 402px;
+    border: 1px solid rgb(230, 230, 230);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#projetos .vitrine .projeto .foto img{
+    height: 200px;
+    width: 400px;
 }
 
 @media (max-width:850px){

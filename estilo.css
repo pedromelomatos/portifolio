@@ -203,6 +203,14 @@ nav #direita a:last-child{
         height: 525px;
         width: 750px;
     }
+    #projetos .vitrine .projeto .foto{
+        height: 302px;
+        width: 502px;
+    }
+    #projetos .vitrine .projeto .foto img{
+        height: 300px;
+        width: 500px;
+    }
 }
 
 @media (max-width:850px){
@@ -225,7 +233,7 @@ nav #direita a:last-child{
 }
 
 
-@media (max-width: 570px){
+@media (max-width: 620px){
     nav {
         padding: 0 20px;
     }
@@ -259,11 +267,11 @@ nav #direita a:last-child{
         
     }
     #projetos .vitrine .projeto{
-        width: 140%;
+        width: 125%;
     }
     #projetos .vitrine .projeto .foto{
-    min-height: 40%;
-    max-width: 80%;
+    max-height: 45%;
+    max-width: 90%;
     position: relative;
 
     }

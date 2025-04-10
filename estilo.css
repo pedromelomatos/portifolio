@@ -167,12 +167,14 @@ nav #direita a:last-child{
 }
 
 #projetos .vitrine .projeto{
-    height: 350px;
+
     width: 500px;
     border: 1.5px solid lightgray;
     border-radius: 50px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     
 }
 
@@ -268,15 +270,20 @@ nav #direita a:last-child{
     }
     #projetos .vitrine .projeto {
         width: 100%;
-        overflow: hidden; 
+        overflow: hidden;
+        display: flex; 
+     
+        
 
     }
 
     #projetos .vitrine .projeto .foto {
-        width: 90%;
+        width: 100%;
+        height: auto;
         aspect-ratio: 2.02/1;
         position: relative;
         overflow: hidden;
+        flex-shrink: 0;
         
   
     }
@@ -285,6 +292,7 @@ nav #direita a:last-child{
         width: 100%;
         height: auto;
         object-fit: cover;
+        display: block;
 
          
     }

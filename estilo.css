@@ -266,20 +266,27 @@ nav #direita a:last-child{
         padding: 0 20px;
         
     }
-    #projetos .vitrine .projeto{
-        width: 125%;
-    }
-    #projetos .vitrine .projeto .foto{
-    max-height: 45%;
-    max-width: 90%;
-    position: relative;
-
-    }
-    #projetos .vitrine .projeto .foto img{
-        height: 100%;
+    #projetos .vitrine .projeto {
         width: 100%;
+        overflow: hidden; 
 
-        position: absolute;
+    }
+
+    #projetos .vitrine .projeto .foto {
+        width: 90%;
+        aspect-ratio: 2.02/1;
+        position: relative;
+        overflow: hidden;
+        
+  
+    }
+
+    #projetos .vitrine .projeto .foto img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+         
     }
 
 

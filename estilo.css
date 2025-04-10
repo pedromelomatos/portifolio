@@ -332,6 +332,9 @@ nav #direita a:last-child{
     #projetos .vitrine .projeto .texto{
         font-size: 20px;
     }
+    #projetos .vitrine .projeto .texto h2{
+        font-size: 20px;
+    }
 
     #projetos .vitrine .projeto .texto .links{
         display: flex;

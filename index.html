@@ -157,15 +157,18 @@
                     Tem alguma dúvida, sugestão ou proposta? Fique à vontade para me enviar uma mensagem! Estou sempre aberto a novas ideias, projetos ou parcerias. Respondo o mais rápido possível!
                 </div>
           
-                <form>
+                <form action="https://formsubmit.co/melomatosdev@gmail.com" method="POST">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" name="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" cols="30" rows="10"></textarea>
+                    <textarea id="mensagem" cols="30" rows="10" name="message" required></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://pedromelomatos.github.io/portifolio/">
 
                     <button type="submit">Enviar Mensagem</button>
                     </form>

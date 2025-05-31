@@ -1,4 +1,4 @@
-🌐 Portfólio
+# 🌐 Portfólio
 
 Bem-vindo ao meu portfólio pessoal! Este projeto tem como objetivo apresentar quem sou, minhas habilidades, projetos desenvolvidos e formas de contato. 
 

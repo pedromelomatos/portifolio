@@ -3,186 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio do Pedro</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="description" content="Portfólio de Pedro Melo, estudante de ADS e desenvolvedor web.">
+    <title>Portfólio do Pedro Melo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
-    <nav>
-        <div id="esquerda">
-            <a href="/">Pedro Melo</a>
-        </div>
-        <div id="direita">
-            <a href="https://github.com/pedromelomatos" target="_blank"><i class="fa-brands fa-github"></i> <span>GitHub</span></a>
-            <a href="https://www.linkedin.com/in/pedro-henrique-melo-18977638a/" target="_blank"><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a>
-            <a href="mailto:melomatosp@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> <span>Email</span></a>
-        </div>
-    </nav>
+    <header class="topo">
+        <nav aria-label="Navegação principal">
+            <a class="marca" href="#intro" aria-label="Ir para o início">Pedro Melo</a>
+
+            <div class="nav-links">
+                <a href="https://github.com/pedromelomatos" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Pedro Melo">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-henrique-melo-18977638a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Pedro Melo">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a class="botao-nav" href="mailto:melomatosp@gmail.com" aria-label="Enviar email para Pedro Melo">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <section id="intro">
-            <div class="texto">
-                <h2>Olá, eu sou o Pedro 👋🏾</h2>
-                <p>Tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas (ADS) no Instituto Federal de São Paulo (IFSP). Tenho interesse em tecnologia e desenvolvimento web, sempre buscando aprimorar minhas habilidades e aprender novas ferramentas.</p>
+        <section id="intro" class="hero secao">
+            <div class="hero-texto reveal">
+                <p class="eyebrow">Desenvolvimento web e soluções digitais</p>
+                <h1>Olá, eu sou o Pedro.</h1>
+                <p class="descricao">
+                    Tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas no Instituto Federal de São Paulo. Gosto de criar interfaces objetivas, sistemas úteis e projetos que resolvem problemas reais com código limpo.
+                </p>
 
-            
-
-                <div class="links">
-                    <a href="#habilidades">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Habilidades</span>
+                <div class="hero-acoes" aria-label="Links rápidos">
+                    <a class="botao primario" href="#projetos">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Ver projetos</span>
                     </a>
-                    <a href="#projetos">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <span>Projetos</span>
-                    </a>
-                    <a href="#contato">
-                        <i class="fa-solid fa-comments"></i>
-                        <span>Contato</span>
-                    </a>
-                    <a href="arquivos/curriculum(pedro_melo).pdf" target="_blank">
+                    <a class="botao" href="arquivos/curriculum(pedro_melo).pdf" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-file-arrow-down"></i>
-                        <span>Curriculum</span>
+                        <span>Currículo</span>
                     </a>
                 </div>
+
+                <div class="resumo" aria-label="Resumo profissional">
+                    <div>
+                        <strong>ADS</strong>
+                        <span>IFSP</span>
+                    </div>
+                    <div>
+                        <strong>Web</strong>
+                        <span>Front-end e back-end</span>
+                    </div>
+                    <div>
+                        <strong>Flask</strong>
+                        <span>Python e MySQL</span>
+                    </div>
+                </div>
             </div>
 
-            <div id="foto">
-                <img src="imagens/foto-pedro.webp" alt="Foto do Pedro" title="Foto do Pedro">
-
+            <div class="hero-foto reveal">
+                <div class="foto-moldura">
+                    <img src="imagens/foto-pedro.webp" alt="Foto de Pedro Melo" title="Foto de Pedro Melo">
+                </div>
             </div>
         </section>
-        
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div class="texto">
-                Tenho familiaridade com as principais tecnologias do desenvolvimento web e estou em constante aprendizado para aprimorar minhas soluções, buscando sempre escrever código limpo, funcional e focado na experiência do usuário.
+
+        <section id="habilidades" class="secao habilidades reveal">
+            <div class="cabecalho-secao">
+                <p class="eyebrow">Stack</p>
+                <h2>Habilidades</h2>
+                <p>
+                    Tenho familiaridade com as principais tecnologias do desenvolvimento web e sigo aprimorando minhas soluções com foco em clareza, funcionalidade e experiência do usuário.
+                </p>
             </div>
-            <div class="celulas">
-                <div class="celula">
-                    <img src="imagens/logo-html-5-1024.png" alt="html logo">
+
+            <div class="grade-habilidades">
+                <article class="habilidade">
+                    <img src="imagens/logo-html-5-1024.png" alt="Logo HTML">
                     <span>HTML</span>
-                </div>
-
-                <div class="celula">
-                    <img src="imagens/logo-css-3-1024.png" alt="css logo">
+                </article>
+                <article class="habilidade">
+                    <img src="imagens/logo-css-3-1024.png" alt="Logo CSS">
                     <span>CSS</span>
-                </div>
-
-                <div class="celula">
-                    <img src="imagens/JavaScript-logo.png" alt="javascript logo">
-                    <span>Javascript</span>
-                </div>
-
-                <div class="celula">
-                    <img src="imagens/Python-logo-notext.svg.png" alt="python logo">
+                </article>
+                <article class="habilidade">
+                    <img src="imagens/JavaScript-logo.png" alt="Logo JavaScript">
+                    <span>JavaScript</span>
+                </article>
+                <article class="habilidade">
+                    <img src="imagens/Python-logo-notext.svg.png" alt="Logo Python">
                     <span>Python</span>
-                </div>
-                <div class="celula">
-                    <img src="imagens/flask-logo.png" alt="flask logo">
+                </article>
+                <article class="habilidade">
+                    <img src="imagens/flask-logo.png" alt="Logo Flask">
                     <span>Flask</span>
-                </div>
-                <div class="celula">
-                    <img src="imagens/mysql-logo.png" alt="mysql logo">
+                </article>
+                <article class="habilidade">
+                    <img src="imagens/mysql-logo.png" alt="Logo MySQL">
                     <span>MySQL</span>
-                </div>
+                </article>
             </div>
-
         </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
+        <section id="projetos" class="secao projetos reveal">
+            <div class="cabecalho-secao">
+                <p class="eyebrow">Trabalhos recentes</p>
+                <h2>Projetos</h2>
+                <p>Alguns projetos que mostram minha prática com interfaces, autenticação, banco de dados e aplicações web.</p>
+            </div>
+
             <div class="vitrine">
-                <div class="projeto">
-                    <div class="foto">
-                        <img src="imagens/intranet.png" alt="">                       
-                    </div>
-                    <div class="texto">
-                        <h2>Intranet da AGE Gold</h2>
-                        <div class="links">
-                            <a href="https://github.com/pedromelomatos/intranet-age" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                <article class="projeto">
+                    <a class="projeto-foto" href="https://github.com/pedromelomatos/intranet-age" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Intranet da AGE Gold">
+                        <img src="imagens/intranet.png" alt="Tela da Intranet da AGE Gold">
+                    </a>
+                    <div class="projeto-corpo">
+                        <div>
+                            <span class="tag">Sistema interno</span>
+                            <h3>Intranet da AGE Gold</h3>
+                            <p>Aplicação para organizar rotinas internas e facilitar o acesso a informações da equipe.</p>
+                        </div>
+                        <div class="links-projeto">
+                            <a href="https://github.com/pedromelomatos/intranet-age" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
+                </article>
 
-                </div>   
-                <div class="projeto">
-                    <div class="foto">
-                        <img src="imagens/cadastro.png" alt="">
-                        
-                    </div>
-                    <div class="texto">
-                        <h2>Cadastro e Autenticação de Usuários com Flask</h2>
-                        <div class="links">
-                            <a href="https://pedromelo.pythonanywhere.com/" target="_blank"><i class="fa-solid fa-globe"></i> Acessar</a>
-                            <a href="https://github.com/pedromelomatos/cadastro-mysql" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                <article class="projeto">
+                    <a class="projeto-foto" href="https://pedromelo.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir cadastro e autenticação">
+                        <img src="imagens/cadastro.png" alt="Tela do sistema de cadastro e autenticação">
+                    </a>
+                    <div class="projeto-corpo">
+                        <div>
+                            <span class="tag">Flask e MySQL</span>
+                            <h3>Cadastro e autenticação</h3>
+                            <p>Sistema de usuários com cadastro, login e integração com banco de dados.</p>
+                        </div>
+                        <div class="links-projeto">
+                            <a href="https://pedromelo.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>Acessar</span>
+                            </a>
+                            <a href="https://github.com/pedromelomatos/cadastro-mysql" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
-                    
+                </article>
 
-                </div>
-
-                <div class="projeto">
-                    <div class="foto">
-                        <img src="imagens/mapa-do-dev-print.png" alt="">
-                    </div>
-                    <div class="texto">
-                        <h2>Mapa do Dev (em desenvolvimento)</h2>
-                        <div class="links">
-                            <a href="https://github.com/pedromelomatos/mapa-do-dev" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                <article class="projeto">
+                    <a class="projeto-foto" href="https://github.com/pedromelomatos/mapa-do-dev" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Mapa do Dev">
+                        <img src="imagens/mapa-do-dev-print.png" alt="Tela do projeto Mapa do Dev">
+                    </a>
+                    <div class="projeto-corpo">
+                        <div>
+                            <span class="tag">Repositório no GitHub</span>
+                            <h3>Mapa do Dev</h3>
+                            <p>Projeto para reunir caminhos de estudo e referências úteis para desenvolvedores, disponível pelo repositório no GitHub.</p>
+                        </div>
+                        <div class="links-projeto">
+                            <a href="https://github.com/pedromelomatos/mapa-do-dev" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
+                </article>
 
-                </div>
-                <div class="projeto">
-                    <div class="foto">
-                        <img src="imagens/site-age.png" alt="">
-                        
-                    </div>
-                    <div class="texto">
-                        <h2>Site para Consultora Financeira</h2>
-                        <div class="links">
-                            <a href="https://grupoagegold.com.br/" target="_blank"><i class="fa-solid fa-globe"></i> Acessar</a>
-                            <a href="https://github.com/pedromelomatos/site-age/" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                <article class="projeto">
+                    <a class="projeto-foto" href="https://grupoagegold.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir site para consultora financeira">
+                        <img src="imagens/site-age.png" alt="Tela do site para consultora financeira">
+                    </a>
+                    <div class="projeto-corpo">
+                        <div>
+                            <span class="tag">Site institucional</span>
+                            <h3>Site para consultora financeira</h3>
+                            <p>Página institucional responsiva para apresentar serviços e fortalecer presença digital.</p>
+                        </div>
+                        <div class="links-projeto">
+                            <a href="https://grupoagegold.com.br/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>Acessar</span>
+                            </a>
+                            <a href="https://github.com/pedromelomatos/site-age/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
-
-                </div>
-                
+                </article>
             </div>
-
         </section>
 
-        <section id="contato" class="secao-contato">
-            <h2>Contato</h2>
-            <div class="grupo">
-                <div class="texto">
-                    Tem alguma dúvida, sugestão ou proposta? Fique à vontade para me enviar uma mensagem! Estou sempre aberto a novas ideias, projetos ou parcerias. Respondo o mais rápido possível!
+        <section id="contato" class="secao contato reveal">
+            <div class="cabecalho-secao alinhado-esquerda">
+                <p class="eyebrow">Contato</p>
+                <h2>Vamos conversar?</h2>
+                <p>
+                    Tem alguma dúvida, sugestão ou proposta? Fique à vontade para me enviar uma mensagem. Estou aberto a novas ideias, projetos e parcerias.
+                </p>
+            </div>
+
+            <div class="contato-layout">
+                <div class="contato-info">
+                    <a href="mailto:melomatosp@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>melomatosp@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/pedromelomatos" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/pedromelomatos</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-henrique-melo-18977638a/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
-          
+
                 <form action="https://formsubmit.co/melomatosdev@gmail.com" method="POST">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="name" required>
+                    <input type="text" id="nome" name="name" autocomplete="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
 
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" cols="30" rows="10" name="message" required></textarea>
+                    <textarea id="mensagem" cols="30" rows="7" name="message" required></textarea>
 
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://pedromelomatos.github.io/portifolio/">
 
-                    <button type="submit">Enviar Mensagem</button>
-                    </form>
-              
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Enviar mensagem</span>
+                    </button>
+                </form>
             </div>
-
-
         </section>
     </main>
+
+    <footer>
+        <p>© <span id="ano-atual"></span> Pedro Melo. Feito com HTML, CSS e JavaScript.</p>
+    </footer>
 </body>
-<script src="script.js"></script>
 </html>
